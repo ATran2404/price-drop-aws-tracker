@@ -1,0 +1,25 @@
+{
+  "name": "price-tracker-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "node build.js",
+    "build:firefox": "node build.js --firefox",
+    "watch": "node build.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.2.2",
+    "@types/firefox-webext-browser": "^143.0.0",
+    "@types/webextension-polyfill": "^0.12.5",
+    "esbuild": "^0.28.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.12.0"
+  }
+}

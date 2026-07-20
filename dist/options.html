@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Price Drop Tracker — Settings</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Price Drop Tracker — Settings</h1>
+
+    <section>
+      <h2>1. RapidAPI Key</h2>
+      <p class="help">
+        This extension uses the <strong>Real-Time Amazon Data</strong> API on
+        <a href="https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-amazon-data" target="_blank" rel="noopener">
+          RapidAPI
+        </a>. Steps to get a key:
+      </p>
+      <ol class="help">
+        <li>Create a free account at <a href="https://rapidapi.com" target="_blank" rel="noopener">rapidapi.com</a>.</li>
+        <li>Open the "Real-Time Amazon Data" API page (link above) and click <em>Subscribe</em> (a free tier is available).</li>
+        <li>Copy your <code>X-RapidAPI-Key</code> from the "Header Parameters" section of the API's code snippets.</li>
+        <li>Paste it below.</li>
+      </ol>
+      <input type="password" id="apiKey" placeholder="Your RapidAPI key" />
+      <button id="toggleKeyVisibility" type="button">Show</button>
+    </section>
+
+    <section>
+      <h2>2. Check Frequency</h2>
+      <p class="help">
+        Free RapidAPI tiers have limited monthly requests. Choose an interval that fits
+        your quota and how many products you track.
+      </p>
+      <select id="interval">
+        <option value="30">Every 30 minutes</option>
+        <option value="60">Every hour</option>
+        <option value="180">Every 3 hours (recommended)</option>
+        <option value="360">Every 6 hours</option>
+        <option value="720">Every 12 hours</option>
+        <option value="1440">Once a day</option>
+      </select>
+    </section>
+
+    <button id="saveBtn" class="save-btn">Save Settings</button>
+    <div id="savedMsg" class="saved-msg hidden">Saved ✓</div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

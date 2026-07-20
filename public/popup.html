@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Price Drop Tracker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>Price Drop Tracker</h1>
+    <button id="settingsBtn" title="Settings">⚙️</button>
+  </header>
+
+  <div id="noKeyWarning" class="warning hidden">
+    No RapidAPI key set. <a id="openOptionsLink" href="#">Open settings</a> to add one.
+  </div>
+
+  <div id="productList" class="product-list"></div>
+
+  <div id="emptyState" class="empty-state hidden">
+    <p>No products tracked yet.</p>
+    <p class="hint">Open an Amazon product page and click "🔔 Track Price".</p>
+  </div>
+
+  <footer>
+    <button id="checkAllBtn">Check all now</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

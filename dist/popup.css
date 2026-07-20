@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f1f1f;
+  background: #fafafa;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  background: #148A5A;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 15px;
+  margin: 0;
+}
+
+header button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.warning {
+  background: #fff3cd;
+  color: #7a5b00;
+  font-size: 12px;
+  padding: 8px 14px;
+}
+
+.warning a {
+  color: #7a5b00;
+  font-weight: 600;
+}
+
+.product-list {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.product-item {
+  display: flex;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-item img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.product-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.product-title {
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.current-price {
+  font-weight: 700;
+}
+
+.current-price.down {
+  color: #148A5A;
+}
+
+.current-price.up {
+  color: #c0392b;
+}
+
+.original-price {
+  font-size: 11px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.meta-row {
+  font-size: 10.5px;
+  color: #888;
+  margin-top: 3px;
+}
+
+.item-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item-actions button {
+  font-size: 10.5px;
+  padding: 3px 6px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.item-actions button:hover {
+  background: #f0f0f0;
+}
+
+.empty-state {
+  padding: 30px 20px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+.empty-state .hint {
+  font-size: 11.5px;
+  color: #999;
+  margin-top: 6px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  padding: 10px 14px;
+  border-top: 1px solid #eee;
+}
+
+footer button {
+  width: 100%;
+  padding: 8px;
+  background: #148A5A;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+footer button:hover {
+  background: #0f6e46;
+}

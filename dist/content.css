@@ -1,0 +1,58 @@
+#price-tracker-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 2147483647;
+  background: #148A5A;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#price-tracker-btn:hover {
+  transform: translateY(-2px);
+}
+
+#price-tracker-btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+}
+
+#price-tracker-btn.tracked {
+  background: #2b2b2b;
+}
+
+.price-tracker-toast {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  max-width: 280px;
+  background: #1f1f1f;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  z-index: 2147483647;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.price-tracker-toast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.price-tracker-toast.error {
+  background: #8a1f1f;
+}
